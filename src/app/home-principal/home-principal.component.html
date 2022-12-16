@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Login</title>    
+</head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="/home-principal">
+            <img src="https://i.imgur.com/pJ1tk1A.jpg" alt="logo" width="60" height="60">
+          </a>
+          <span class="navbar-text">
+            <a href="/login" class="text-black nav-link">Iniciar Sesion</a> 
+
+          </span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center">
+            <img src="https://i.imgur.com/C0F3meQ.png" alt="LogoGrande" class="logo-home-principal">
+            <br>
+            <br>
+            <h3><span data-feather="bell"></span>Rescate y recuperacion de perros, para la busqueda de un nuevo hogar.</h3>
+            <h3>Rescate y alojamiento temporal de perritos en total abandono.</h3>
+            <h3>Asociacion sin fines de lucro.</h3>
+            <br><br>
+        </div>
+
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4" >
+            <div class="col" *ngFor="let mascota of mascotas">
+            <div class="card" >
+                
+                    <img src="{{mascota.foto}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{mascota.nombre}}</h5>
+                      <p class="card-text">{{mascota.descripcion}},</p>
+                      <a href="#" class="btn btn-primary">ADOPTAME</a>
+                    </div>
+               
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-4 col-lg-4 col-xl-4 mx-auto">
+                <a href="/registroDonaciones" class="boton-donar">❤ Donar</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted text-white ">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: rgb(0, 0, 0);">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-">
+
+
+                    <div class="col-4 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+                        <h4>
+                            Redes Sociales
+                        </h4>
+                        <h3>Adopta Trujillo | Facebook</h3>
+                        <h3>@adoptatrujilloperu</h3>
+
+                    </div>
+                
+
+                </div>
+            </div>
+        </section>
+        <div class=" p-4 text-white" style="background-color: rgb(0, 0, 0);">
+            © UPAO 2022 Copyright
+            
+        </div>
+    </footer>
+
+      
+
+
+
+  </body>
+
+</html>

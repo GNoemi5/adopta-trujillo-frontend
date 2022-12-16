@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.boton-donar{
+    display: block;
+    width: 230px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 250%;
+    background-color: rgb(133, 166, 76);
+    border-radius: 40px;
+    padding: 10px 30px;
+    margin: 150px 130px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.boton-donar:hover{
+    color: black;
+}
+
+.table-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+    font-weight: 70;
+}
+
+.logo-login{
+    width: 500px;
+    margin: 120px;
+}
+
+.logo-grande{
+    width: 430px;
+}
+
+.logo-home-principal{
+    width: 850px;
+}
+
+.mascota-home-principal{
+    width: 230px;
+    border-width: 5px;
+    border-color: rgb(44, 195, 11);
+    border-style: groove;
+}
+
+.imagen-admin-interface{
+    width: 450px;
+    height: 330px;
+    border-radius: 100px;
+}
